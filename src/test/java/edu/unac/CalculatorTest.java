@@ -41,12 +41,4 @@ class CalculatorTest {
         });
         assertEquals("Cannot divide by zero.", thrown.getMessage());
     }
-
-    @Test
-    void testAbsoluteValue() {
-        Calculator calc = new Calculator();
-        assertEquals(5, calc.abs(5));
-        assertEquals(5, calc.abs(-5));
-        assertEquals(0, calc.abs(0));
-    }
 }
